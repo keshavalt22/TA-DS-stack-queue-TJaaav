@@ -31,7 +31,7 @@ Methods:
 
 ```js
 class Stack {
-  // your code goes here
+  
 }
 
 // Test 1

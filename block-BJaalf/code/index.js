@@ -16,7 +16,7 @@ function loop(x) {
     return loop(x - 1)
 }
 
-function countTo(x = 0, limiy) {
+function countTo(x = 0, limit) {
     if (x === limit) return x;
     console.log(x);
     x++;
@@ -38,10 +38,17 @@ function factorial(x) {
     return factorial(x - 1)
 }
 
+function recursiveExponent(base, expo) {
+    if (expo === 1) return base;
+    return base * recursiveExponent(base, --expo)
+}
 
-let newArr = [];
+let final = []
 function recursiveReverse(arr) {
-    if (arr.length === 0) return newArr;
-    newArr.push(arr.pop());
-    recursiveReverse(arr);
+    let elm = arr.pop();
+    final.push(elm);
+    if (arr.length === 0) {
+        return final;
+    }
+    return recursiveReverse(err)
 }

@@ -7,6 +7,7 @@ Read the article https://codeburst.io/learn-and-understand-recursion-in-javascri
 - Write a function named `repeater` that takes an input character and returns that character repeated 5 times using recursion. For example, if the input is 'g', then the output should be 'ggggg'.
 
 ```js
+
 // Test
 console.log(repeater('g')); // 'ggggg'
 console.log(repeater('j')); // 'jjjjj'
@@ -31,6 +32,7 @@ console.log(countTo(4)); // 0 1 2 3 4
 - Write a function `exponent` that takes two arguments base, and expo. Using a while loop return the exponent value of the base. For example if the base if `4` and expo is `3` the output will be `4 * 4 * 4` i.e 64.
 
 ```js
+
 // Test
 console.log(exponent(2, 3)); // 8
 console.log(exponent(3, 3)); // 27

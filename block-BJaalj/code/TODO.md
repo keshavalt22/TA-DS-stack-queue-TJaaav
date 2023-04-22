@@ -3,8 +3,13 @@
 - Write a function called `linearSearch` which accepts an array and a value. Using the linear search algorithm search for the value. If you find the value return the index of the element otherwise return -1. Olso write teh
 
 ```js
-function linearSearch() {
-  //  Your code goes here
+function linearSearch(arr, value) {
+  for(let i = 0; i < arr.length; i++){
+    if(arr[i] === value) {
+      return i
+    }
+  }
+  return -1; 
 }
 
 // TEST
@@ -18,8 +23,22 @@ console.log(linearSearch(list, 54)); // 8
 - Write a function called `binarySearch` which accepts an array and a value. Using the binary search algorithm search for the value. If you find the value return the index of the element otherwise return -1. Make sure to use the binary search algorithm.
 
 ```js
-function binarySearch() {
-  //  Your code goes here
+function binarySearch(list, value) {
+  let lower = 0;
+  let upper = list.length - 1;
+
+  while(lower <= upper){
+    const middle = lower + math.floor((upper - lower)/2);
+    if(list[middle] === list) {
+      return middle;
+    }
+    if(value < list[middle]){
+      upper = middle - 1;
+    }else {
+      lower = middle + 1
+    }
+  }
+  return -1
 }
 
 // TEST
